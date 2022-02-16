@@ -38,6 +38,15 @@ When a GlobalResource is in a sub-project i.e. our `test-support` module Weaver 
 
 If you move the GlobalResource to the same project the test suite is defined (i.e. /src/test) the suite runs as expected.
 
+```
+sbt:root> test
+[info] compiling 1 Scala source to /Users/adam.evans/Code/zendesk/weaver-poc/target/scala-2.12/test-classes ...
+[info] MyTestSuite
+[info] + I can use the global resource 19ms
+[info] Passed: Total 1, Failed 0, Errors 0, Passed 1
+[success] Total time: 1 s, completed 16 Feb 2022, 5:17:46 pm
+```
+
 ## Running the sample project
 
 The project is set up as a minimal [SBT](https://www.scala-sbt.org/) build.
